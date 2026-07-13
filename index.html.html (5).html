@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VTX Roleplay — Regelwerk</title>
+  <style>
+    :root{
+      --green-900:#083918;
+      --green-700:#0b5f2f;
+      --green-500:#0ea65a;
+      --bg:#07130d;
+      --card:#0f2a1e;
+      --muted:#cfe9d8;
+      --accent:#b7f2c9;
+      --maxw:900px;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#052211);color:var(--muted)}
+    .container{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:72px;height:72px;border-radius:8px;background:linear-gradient(135deg,var(--green-700),var(--green-500));display:flex;align-items:center;justify-content:center;font-weight:700;color:#052211}
+    h1{margin:0;font-size:26px}
+    p.lead{margin:6px 0 18px;color:#d8f7e4}
+
+    /* Accordion */
+    .accordion{margin-top:18px;border-radius:12px;overflow:hidden}
+    .acc-item{background:var(--card);border-bottom:1px solid rgba(255,255,255,0.03)}
+    .acc-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;cursor:pointer}
+    .acc-head h2{margin:0;font-size:18px;color:var(--accent)}
+    .acc-head .toggle{font-weight:700;color:var(--muted)}
+    .acc-body{padding:0 20px 20px 20px;display:none;color:#e7f8ea}
+    ul.rules{margin:12px 0 0 18px;padding:0}
+    ul.rules li{margin:8px 0;line-height:1.45}
+    .sanction{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:6px;background:rgba(0,0,0,0.15);color:#fff;font-weight:600;font-size:13px}
+
+    /* Footer */
+    footer{margin-top:28px;padding:14px 18px;border-radius:10px;background:rgba(0,0,0,0.12);display:flex;justify-content:space-between;align-items:center;color:#d6efd8}
+    .copyright{font-size:13px}
+    .actions{display:flex;gap:8px}
+    .btn{background:var(--green-700);color:#072514;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:640px){
+      .container{padding:16px;margin:18px}
+      header{gap:10px}
+      .logo{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">VTX</div>
+      <div>
+        <h1>VTX Roleplay — Regelwerk</h1>
+        <p class="lead">Hier findest du die offiziellen Regeln für den VTX Roleplay Server. Wähle eine Kategorie, um die Regeln einzusehen.</p>
+      </div>
+    </header>
+
+    <div class="accordion" id="accordion">
+      <section class="acc-item">
+        <div class="acc-head" data-target="allgemein">
+          <h2>Allgemeine Regeln</h2>
+          <div class="toggle">Anzeigen ▾</div>
+        </div>
+        <div class="acc-body" id="allgemein">
+          <ul class="rules">
+            <li><strong>Allg. 1.1</strong> Sobald ein User mit seinem Account dem Roleplay-Server joint, darf nur er mit diesem Account auf dem Server spielen. <span class="sanction">Permanenter Bann</span></li>
+            <li><strong>Allg. 1.2</strong> Ingame-Eigentum darf nicht für Echtgeld verkauft werden. <span class="sanction">Permanenter Bann</span></li>
+            <li><strong>Allg. 1.3</strong> Das Besitzen von über 3 Accounts auf dem Roleplay-Server ist verboten. Main-Account: 60 Tage Bann; alle anderen Accounts: permanente Sperre vom Server. <span class="sanction">60 Tage Bann / Permanent</span></li>
+            <li><strong>Allg. 1.4</strong> Eigentum wie Waffen oder Geld darf nicht zwischen Main- und Twink-Accounts getauscht werden. Permanenter Bann für beide Accounts. <span class="sanction">Permanenter Bann</span></li>
+            <li><strong>Allg. 1.5</strong> Um auf unserem Server spielen zu können, wird Discord benötigt. <span class="sanction">Permanente Sperre (bei Nicht-Nutzung)</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <div class="acc-head" data-target="kommunikation">
+          <h2>Kommunikations Regeln</h2>
+          <div class="toggle">Anzeigen ▾</div>
+        </div>
+        <div class="acc-body" id="kommunikation">
+          <ul class="rules">
+            <li><strong>Komm. 1.1</strong> Um auf unserem Roleplay-Server spielen zu wollen, wird Ingame-Voice benötigt. <span class="sanction">Permanenter Bann (Entbannung über Discord möglich)</span></li>
+            <li><strong>Komm. 1.2</strong> OOC-Talk ist nicht erlaubt — Real-Life-Gespräche sind untersagt. <span class="sanction">Admin Jail 15 Minuten</span></li>
+            <li><strong>Komm. 1.3</strong> IC / OOC-Vermischung ist untersagt — OOC-Situationen dürfen nicht IC benutzt werden. <span class="sanction">Admin Jail 30 Minuten + Warnung</span></li>
+            <li><strong>Komm. 1.4</strong> Das Ticketsystem darf nicht ausgenutzt werden. <span class="sanction">Admin Jail 25 Minuten + Warnung</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <div class="acc-head" data-target="ic">
+          <h2>IC Regeln</h2>
+          <div class="toggle">Anzeigen ▾</div>
+        </div>
+        <div class="acc-body" id="ic">
+          <ul class="rules">
+            <li><strong>IC 1.1</strong> VDM — Vehicle Deathmatch ist verboten. <span class="sanction">Admin Jail 20 Minuten</span></li>
+            <li><strong>IC 1.2</strong> CR — Car Ramming ist verboten. <span class="sanction">Admin Jail 20 Minuten</span></li>
+            <li><strong>IC 1.3</strong> Fail RP — unrealistisches Roleplay ist untersagt. <span class="sanction">Admin Jail 20 Minuten</span></li>
+            <li><strong>IC 1.4</strong> RDM — Random Deathmatch ist untersagt. <span class="sanction">Admin Jail 25 Minuten</span></li>
+            <li><strong>IC 1.5</strong> PG — Powergaming ist verboten. <span class="sanction">Admin Jail 30 Minuten</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <div class="acc-head" data-target="leader">
+          <h2>Leader Regeln</h2>
+          <div class="toggle">Anzeigen ▾</div>
+        </div>
+        <div class="acc-body" id="leader">
+          <ul class="rules">
+            <li><strong>Leader 1.1</strong> Ein Leiter einer Organisation muss bis zu 14 Stunden in der Woche online sein. <span class="sanction">Orgawarn</span></li>
+            <li><strong>Leader 1.2</strong> Ein Leiter einer staatlichen Organisation darf höchstens 2 Vize-Leiter ernennen. <span class="sanction">Orgaclose + Bann 60 Tage</span></li>
+            <li><strong>Leader 1.3</strong> Ein Leiter einer kriminellen Organisation darf höchstens 4 Vize-Leiter ernennen. <span class="sanction">Orgaclose + Bann 60 Tage</span></li>
+            <li><strong>Leader 1.4</strong> Ein Leiter darf nicht Teil eines anderen Roleplay-Servers sein. <span class="sanction">Permanenter Bann</span></li>
+            <li><strong>Leader 1.5</strong> Ein Leiter darf nur mit Genehmigung des Beraters ein Mitglied wegen Vertrauensverlusts kicken. <span class="sanction">Orgawarn</span></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="copyright">© Made by Tom Nexus / Project Management — Stand: 13.07.2026 01:47 Uhr</div>
+    </footer>
+  </div>
+
+  <script>
+    // Accordion behavior
+    document.querySelectorAll('.acc-head').forEach(h => {
+      h.addEventListener('click', () => {
+        const targetId = h.getAttribute('data-target');
+        const body = document.getElementById(targetId);
+        const isOpen = body.style.display === 'block';
+        // close all
+        document.querySelectorAll('.acc-body').forEach(b=> b.style.display = 'none');
+        document.querySelectorAll('.acc-head .toggle').forEach(t => t.textContent = 'Anzeigen ▾');
+        if (!isOpen) {
+          body.style.display = 'block';
+          h.querySelector('.toggle').textContent = 'Verbergen ▴';
+          body.scrollIntoView({behavior:'smooth', block:'center'});
+        }
+      });
+    });
+
+    // open first section by default
+    document.querySelector('.acc-head[data-target]')?.click();
+  </script>
+</body>
+</html>
